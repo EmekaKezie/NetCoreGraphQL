@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetCoreGraphQL</name>
+    </assembly>
+    <members>
+        <member name="T:NetCoreGraphQL.ClassDB.DBFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:NetCoreGraphQL.ClassDB.DBFactory.CDatabaseType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NetCoreGraphQL.Controllers.FacilityController.#ctor(Microsoft.Extensions.Logging.ILogger{NetCoreGraphQL.Controllers.FacilityController})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_logger"></param>
+            <param name="_accessor"></param>
+        </member>
+    </members>
+</doc>
