@@ -111,12 +111,12 @@ namespace NetCoreGraphQL
                 string swaggerJsonBasePath = string.IsNullOrWhiteSpace(c.RoutePrefix) ? "." : "..";
                 c.SwaggerEndpoint($"{swaggerJsonBasePath}/swagger/v1/swagger.json", "IEMS API");
             });
-
+            
             app.UseRouting();
             app.UseCors(Cors);
             app.UseAuthorization();
 
-            app.UseGraphQL<GraphSchema>();
+            app.UseGraphQL<GraphSchema>("/graphql");
             app.UseGraphQLPlayground
                (new GraphQLPlaygroundOptions());
 

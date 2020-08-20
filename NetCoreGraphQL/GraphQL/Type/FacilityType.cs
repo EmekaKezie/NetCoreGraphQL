@@ -5,23 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NetCoreGraphQL.GraphQL
+namespace NetCoreGraphQL.GraphQL.Type
 {
-    public class Types
-    {
-    }
-
-    public class BookType : ObjectGraphType<Book>
-    {
-        public BookType()
-        {
-            Field(x => x.Id);
-            Field(x => x.Title);
-            Field(x => x.Pages, nullable: true);
-            Field(x => x.Chapters, nullable: true);
-        }
-    }
-
     public class FacilityType : ObjectGraphType<Facility>
     {
         public FacilityType()

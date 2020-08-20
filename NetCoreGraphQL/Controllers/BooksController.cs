@@ -14,12 +14,12 @@ namespace NetCoreGraphQL.Controllers
     public class BooksController : ControllerBase
     {
         // GET: api/Books
-        [HttpGet]
-        public IActionResult Get()
-        {
-            var ret = BookUtil.GetBooks();
-            return Ok(new { result = ret }) ;
-        }
+        //[HttpGet]
+        //public IActionResult Get()
+        //{
+        //    var ret = BookUtil.BookAsync();
+        //    return Ok(new { result = ret }) ;
+        //}
 
         
     }

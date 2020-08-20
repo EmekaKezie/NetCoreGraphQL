@@ -29,13 +29,13 @@ namespace NetCoreGraphQL.Controllers
         }
         // GET: api/Facility
         [HttpGet]
-        public IActionResult Get(int Start = 0, int Stop = 20)
+        public IActionResult Get()
         {
             var ret = (dynamic)null;
 
             try
             {
-                ret = FacilityUtil.GetFacility(Start, Stop);
+                ret = FacilityUtil.GetFacility();
                 return Ok(new { result = ret });
             }
             catch (Exception ex)
